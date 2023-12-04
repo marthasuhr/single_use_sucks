@@ -5,6 +5,9 @@
 
   --primary-red: #e93858;
 
+  --font-white: #ffffff;
+  --font-black: #000000;
+
   /*Font-weight*/
   --light: 300;
   --regular: 400;
@@ -29,7 +32,8 @@ body {
   max-width: 2000px;
   min-height: 100vh;
   margin: auto;
-  color: var(--primary-background);
+  background-color: var(--primary-background);
+  color: var(--font-white);
 }
 
 /* Typografi Mobil*/
@@ -46,7 +50,7 @@ h2 {
 }
 
 .citat {
-  font-family: Rubik;
+  font-family: "Rubik", sans-serif;
   font-size: 1.25rem;
   font-style: italic;
   font-weight: var(--light);
@@ -65,7 +69,7 @@ h3 {
 }
 
 p {
-  font-family: Rubik;
+  font-family: "Rubik", sans-serif;
   font-size: 1rem;
   font-weight: var(--regular);
 }
@@ -73,12 +77,10 @@ p {
 @media (min-width: 900px) {
   /*Typografi Web*/
   h1 {
-    font-family: Campton;
     font-size: 6rem;
   }
 
   h2 {
-    font-family: Campton;
     font-size: 4.375rem;
   }
 

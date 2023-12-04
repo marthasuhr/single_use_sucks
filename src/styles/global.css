@@ -1,0 +1,100 @@
+:root {
+  /*Farver*/
+  --primary-background: #007c79;
+  --secondary-background: #6ab1af;
+
+  --primary-red: #e93858;
+
+  /*Font-weight*/
+  --light: 300;
+  --regular: 400;
+  --medium: 500;
+  --bold: 600;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  max-width: 2000px;
+  min-height: 100vh;
+  margin: auto;
+  color: var(--primary-background);
+}
+
+/* Typografi Mobil*/
+h1 {
+  font-family: Campton;
+  font-size: 2.5rem;
+  font-weight: var(--bold);
+}
+
+h2 {
+  font-family: Campton;
+  font-size: 1.5rem;
+  font-weight: var(--medium);
+}
+
+.citat {
+  font-family: Rubik;
+  font-size: 1.25rem;
+  font-style: italic;
+  font-weight: var(--light);
+}
+
+h3 {
+  font-family: Campton;
+  font-size: 1.875rem;
+  font-weight: var(--medium);
+}
+
+.h3_light {
+  font-family: Campton;
+  font-size: 1.875rem;
+  font-weight: var(--regular);
+}
+
+p {
+  font-family: Rubik;
+  font-size: 1rem;
+  font-weight: var(--regular);
+}
+
+@media (min-width: 900px) {
+  /*Typografi Web*/
+  h1 {
+    font-family: Campton;
+    font-size: 6rem;
+  }
+
+  h2 {
+    font-family: Campton;
+    font-size: 4.375rem;
+  }
+
+  .citat {
+    font-size: 2.25rem;
+  }
+
+  h3 {
+    font-size: 3.125rem;
+  }
+
+  .h3_light {
+    font-size: 3.125rem;
+  }
+
+  p {
+    font-size: 1.875rem;
+  }
+}

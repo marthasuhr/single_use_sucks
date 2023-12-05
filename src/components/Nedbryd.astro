@@ -1,0 +1,42 @@
+---
+import Ned1Card from "./Ned1Card.astro";
+import Ned2Card from "./Ned2Card.astro";
+---
+<div class="gradiant">
+<div class="container_overskrift">
+<h2>NEDBRYDSTID</h2>
+<p>Se hvor lang tid det tager for dit skrald at nedbryde i havene...</p>
+</div>
+<div class="card_container" >
+<Ned1Card titel="FRUGT SKRALD" tid="2-5 UGER" imgPath="../grafik/banan.svg"/>
+<Ned2Card titel="CIGARET SKOD" tid="1-5 ÅR" imgPath="../grafik/banan.svg"/>
+<Ned1Card titel="PLASTIK POSE" tid="10-20 ÅR" imgPath="../grafik/banan.svg"/>
+<Ned2Card titel="ENGANGSKOP" tid="50-100 ÅR" imgPath="../grafik/banan.svg"/>
+</div>
+</div>
+
+<style>
+.gradiant{
+padding-top: 8rem;
+    background-image: linear-gradient(var(--secondary-background), var(--primary-background));
+}
+
+.card_container{
+      margin: 0rem 3rem 0rem 3rem;  
+}
+
+.container_overskrift{
+
+    margin: 0rem 3rem 0rem 3rem;
+}
+
+        @media (min-width: 900px) {
+
+            .container_overskrift{
+    margin: 0rem 57rem 0rem 6rem;
+}
+        }
+
+     
+
+</style>

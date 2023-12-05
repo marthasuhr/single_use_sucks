@@ -1,0 +1,46 @@
+---
+const {imgPath, titel, tid} = Astro.props
+
+---
+<h3 class="titel">{titel}</h3>
+
+<div class="container">
+<img src={imgPath} alt="#">
+
+<h3 class="h3_light">{tid}</h3>
+
+</div>
+
+
+<style>
+.container{
+    display: flex;
+flex-direction: row;
+
+padding: 3.5rem 0rem 0rem 3.5rem;
+}
+.titel{
+                background: var(--primary-background);
+display: flex;
+width: 17.6875rem;
+padding: 0.875rem 0rem 0.4375rem 0rem;
+justify-content: center;
+align-items: center;
+}
+    img{
+        width: 7.5rem;
+height: 7.4375rem;
+flex-shrink: 0;
+    }
+        @media (min-width: 900px) {
+            .titel{
+
+display: flex;
+width: 32.625rem;
+padding: 0.875rem 3.5625rem 0.25rem 3.5rem;
+justify-content: center;
+align-items: center;
+            }
+        }
+
+</style>

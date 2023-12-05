@@ -1,4 +1,81 @@
 ---
+const {imgPath} = Astro.props;
+    
 ---
 
+<div class="citat_container" >
+    <div>
+    <p class="citation">"</p>
 
+    <div class="citat1">
+<p class="citat">Forskere har fundet flere store hvaler, der er døde af sult, fordi deres maver er helt fyldt af plastik – og vi ved, at der også findes mikroplast med kemikalier i meget af den mad, vi mennesker spiser.
+</div><p class="citat"> - Henrik Beha Pedersen
+Miljøbiolog & stifter af Plastic Change</p>
+</p>
+</div>
+<div>
+<img class="hval" src={imgPath} alt="Hval">
+</div>
+</div>
+<img src="../images/havbaggrund.svg" alt="havbaggrund">
+<style>
+
+
+.citat_container{
+    margin: 4rem;
+}
+
+img{
+    display: none;
+}
+
+
+
+.citation {
+font-size: 8rem;
+font-weight: var(--regular)
+
+    }
+@media (min-width: 900px) {
+
+    .citation {
+        margin: 0rem 0rem -4rem -6rem;
+font-size: 12.5rem;
+font-weight: var(--regular)
+
+
+    }
+    img{
+        display: block;
+
+    }
+
+    .hval{
+        height: 29.375rem;
+flex-shrink: 0;
+
+
+    }
+.citat_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+margin: 2rem 2rem 2rem 12rem;
+
+
+}
+
+.citat1{
+margin-bottom: 4rem;
+
+}
+
+.havbaggrund{
+width: 94.625rem;
+height: 252.5625rem;
+flex-shrink: 0;
+z-index: 10;
+}
+
+}
+
+</style>

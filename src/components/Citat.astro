@@ -2,6 +2,7 @@
 const {imgPath} = Astro.props;
     
 ---
+<div class="container">
 
 <div class="citat_container" >
     <div>
@@ -16,13 +17,24 @@ Miljøbiolog & stifter af Plastic Change</p>
 <div>
 <img class="hval" src={imgPath} alt="Hval">
 
+</div>
 
 
 <style>
+.container{
+    background-image: url("../images/bølge.svg");
+     background-repeat: no-repeat;
+     background-position: bottom;
 
+
+
+}
 
 .citat_container{
     margin: 4rem;
+
+    
+    
 }
 
 img{
@@ -52,9 +64,9 @@ img{
 /*Regler for web*/
         @media (min-width: 900px) {
 
-            .gradient{
-    background-image: linear-gradient(var(--primary-background), var(--secondary-background));
-            }
+      
+
+            
 
     .citation {
         margin: 0rem 0rem -4rem -6rem;
@@ -80,6 +92,7 @@ flex-shrink: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
 margin: 2rem 2rem 0rem 12rem;
+
 
 
 }

@@ -7,23 +7,36 @@
 
     <img src="../grafik/footerflasker.svg" alt="footer">
 
-    <div class="grid">
+    <div class="container_footer">
+      <img class="logo" src="../images/logo.svg" alt="logo">
+      <a href="../pages/tips.astro">5 gode råd</a>
     
 
         <p>Mail: info@plasticchange.org</p>
         <p>Tlf: +45 66 72 46</p>
- <p>Telefontid Mandag – Fredag: 10:00 – 15:00</p>
-     
+ <p>Telefontid: <br> Mandag – Fredag: 10:00 – 15:00</p>
+     <div>
+<img class="logo" src="../images/facebook.svg" alt="facebook">
+<img class="logo" src="../images/instagram.svg" alt="instagram">
+     </div>
 
   </div>
+
+
 
 </footer>
 
 
 <style>
 
+.logo{
+  width: 73px;
+    height: 27px;
+}
+
 img{
       translate: 0 -65%;
+
 
 }
   footer {
@@ -31,21 +44,27 @@ img{
     background-color: var(--footer-brown);
   }
 
+  p{
+    text-decoration: none;
+  }
  
-  div {
-    padding-bottom: 1.5rem;
-    padding-top: 0.5rem;
-  }
-  p {
-    padding-bottom: 0.5rem;
-  }
-
 
   @media (min-width: 900px) {
     footer {
       padding: 3rem;
     }
 
+    .container_footer{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+.logo
+     {
+
+      width: 147px;
+      height: 55px;
+    }
    
  
   }

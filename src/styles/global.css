@@ -8,6 +8,8 @@
   --font-white: #ffffff;
   --font-black: #000000;
 
+  --footer-brown: #c3a18b;
+
   /*Font-weight*/
   --light: 300;
   --regular: 400;
@@ -39,13 +41,13 @@ body {
 /* Typografi Mobil*/
 h1 {
   font-family: Campton;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: var(--bold);
 }
 
 h2 {
   font-family: Campton;
-  font-size: 1.5rem;
+  font-size: 2.25rem;
   font-weight: var(--medium);
 }
 
@@ -58,17 +60,18 @@ h2 {
 
 h3 {
   font-family: Campton;
-  font-size: 1.875rem;
+  font-size: 1.7rem;
   font-weight: var(--medium);
 }
 
 .h3_light {
   font-family: Campton;
-  font-size: 1.875rem;
+  font-size: 1.7rem;
   font-weight: var(--regular);
 }
 
-p {
+p,
+a {
   font-family: "Rubik", sans-serif;
   font-size: 1rem;
   font-weight: var(--regular);
@@ -89,14 +92,20 @@ p {
   }
 
   h3 {
-    font-size: 3.125rem;
+    font-size: 3rem;
   }
 
   .h3_light {
-    font-size: 3.125rem;
+    font-size: 3rem;
   }
 
   p {
     font-size: 1.875rem;
+  }
+
+  a {
+    font-size: 1.3rem;
+    align-self: center;
+    justify-content: center;
   }
 }

@@ -1,45 +1,47 @@
 ---
 import Ned1Card from "./Ned1Card.astro";
 import Ned2Card from "./Ned2Card.astro";
+
 ---
 <div class="gradiant">
 <div class="container_overskrift">
 <h2>NEDBRYDSTID</h2>
 <p>Se hvor lang tid det tager for dit skrald at nedbryde i havene...</p>
 </div>
+
+
 <div class="card_container" >
 
-<Ned1Card class="scroll" titel="FRUGT SKRALD" tid="2-5 UGER" imgPath="../grafik/banan.svg"/>   
-
-<Ned2Card class="scroll" titel="CIGARET SKOD" tid="1-5 ÅR" imgPath="../grafik/cigaret.svg"/>
-
-<Ned1Card class="scroll" titel="PLASTIK POSE" tid="10-20 ÅR" imgPath="../grafik/plastpose.svg"/>
+<div class="scroll">
+<Ned2Card  titel="CIGARET SKOD" tid="1-5 ÅR" imgPath="../grafik/cigaret.svg"/>
+</div>
+<div class="scroll" >
+<Ned1Card titel="FRUGT SKRALD" tid="2-5 UGER" imgPath="../grafik/banan.svg"/>   
+</div>
+<div class="scroll">
+<Ned1Card  titel="PLASTIK POSE" tid="10-20 ÅR" imgPath="../grafik/plastpose.svg"/>
+</div>
+<div class="scroll">
 <Ned2Card class="scroll" titel="ENGANGSKOP" tid="50-100 ÅR" imgPath="../grafik/kop.svg"/>
-<Ned1Card class="scroll" titel="DÅSE" tid="100-200 ÅR" imgPath="../grafik/dase.svg"/>
-<Ned2Card class="scroll" titel="SIXPACKHOLDER" tid="400-500 ÅR" imgPath="../grafik/sixpack.svg"/>
+</div>
+<div class="scroll">
+<Ned1Card class="scroll" titel="DÅSE" tid="100-200 ÅR" imgPath="../grafik/dase.svg"/></div>
+<div class="scroll">
+<Ned2Card class="scroll" titel="SIXPACKHOLDER" tid="400-500 ÅR" imgPath="../grafik/sixpack.svg"/></div>
+<div class="scroll">
 <Ned1Card class="scroll" titel="PLASTIK FLASKE" tid="450+ ÅR" imgPath="../grafik/flaske.svg"/>
 </div>
 </div>
 
-<div class="container_linje">
-
-<svg class="linjen" viewBox="0 0 20 2833" fill="none" preserveAspectRatio="xMidYMax meet">
-<circle cx="10" cy="10" r="10" fill="white"/>
-<line x1="10" y1="12" x2="10.0001" y2="2818" stroke="white" stroke-width="10"/>
-<circle cx="10" cy="2823" r="10" fill="white"/>
-</svg>
 
 </div>
+<div class="linje">
+<svg xmlns="http://www.w3.org/2000/svg" width="10" height="2818" viewBox="0 0 10 2818" fill="none">
+<path d="M5 5.5V2813" stroke="white" stroke-width="10" stroke-linecap="round"/>
+</svg> </div>
 
 <style>
 
-    .container_linje{
-       display: none;
-    }
-
-    .linjen{
-        display: none;
-    }
 .gradiant{
 padding-top: 8rem;
     background-image: linear-gradient(var(--secondary-background), var(--primary-background));
@@ -51,13 +53,19 @@ padding-top: 8rem;
 }
 
 .container_overskrift{
-
     margin: -1rem 3rem 2rem 3rem;
 }
 
-        @media (min-width: 900px) {
+.linje{
+    display: none;
+}
 
-               .container_linje{
+ @media (min-width: 900px) {
+
+.linje{
+    display: block;
+
+     
         position: fixed;
         top: 0;
         left: 0;
@@ -65,69 +73,33 @@ padding-top: 8rem;
         height: 100%;
         text-align: center;
         overflow: hidden;
-    }
+}
+    .card_container{
 
-    .linjen{
-        display: inline-block;
-        height: 100%;
-    }
 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.scroll{
+ grid-row-end: span 2;
+   aspect-ratio: 1;
+    
+    }
+.scroll:first-child{
+     grid-row-start: 2;
+}
+      
             .container_overskrift{
     margin: 0rem 57rem 0rem 6rem;
 }
 
 
-.card_container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-top: 5rem;
-}
 
-.scroll{
-    display: grid;
-}
         }
 
    
 
 </style>
 
-<script>
-
-let path = document.querySelector('path')
-let pathLength = document.getTotalLength()
-
-path.style.strokeDasharray = pathLength + '' + pathLength;
-
-path.style.strokeDasharray = pathLength;
-
-window.addEventListener('scroll', () => {
-
-    var scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight)
-
-    var drawLength = pathLength * scrollPercentage;
-
-    path.style.strokeDashoffset = pathLength - drawLength;
-
-
-const target = document.querySelector('scroll');
-
-var index = 0, length = target.length;
-for (index; index <length; index++){
-    var pos = window.pageYOffset * target[index].dataset.rate
-
-    if(target[index].dataset.direction ==='vertical'){
-        target[index].style.transform = 'translate3d(0px, '+pos+'px, 0px)';
-    }else{
-        var posX = window.pageYOffset * target[index].dataset.ratex;
-
-        var posY = window.pageYOffset * target[index].dataset.ratex;
-
-        target[index].style.transofrm = 'translate3d('+posX+'px, '+posY+'px, 0px)';
-    }
-}
-
-
-    })
-
-</script>

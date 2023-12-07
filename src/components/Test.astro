@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="items"> </div>
+  <div class="items"></div>
+  <div class="items"></div>
+  <div class="items"></div>
+  <div class="items"></div>
+  <div class="items"></div>
+</div>
+
+<style>
+.container {
+  max-width: 800px;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.items {
+  grid-row-end: span 2;
+  
+
+  aspect-ratio: 1;
+  background: red;
+}
+
+.items:first-child {
+  grid-row-start: 2;
+}
+
+.graphic {
+  translate: 0 -75%;
+  
+  
+  
+  
+  height: 2rem;
+  margin: .5rem;
+  background: #000;
+}
+
+</style>

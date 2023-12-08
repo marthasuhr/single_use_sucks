@@ -40,6 +40,7 @@ import Ned2Card from "./Ned2Card.astro";
 .gradiant{
 padding-top: 8rem;
     background-image: linear-gradient(var(--secondary-background), var(--primary-background) );
+       overflow: hidden;
 }
 
 .card_container{
@@ -50,7 +51,7 @@ padding-top: 8rem;
 }
 
 .container_overskrift{
-    margin: -1rem 3rem 2rem 3rem;
+    margin: 0rem 3rem 2rem 3rem;
 }
 
 
@@ -72,6 +73,8 @@ padding-top: 8rem;
 .scroll{
  grid-row-end: span 2;
    aspect-ratio: 1;
+
+
     
     }
 .scroll:first-child{
@@ -79,7 +82,7 @@ padding-top: 8rem;
 }
       
             .container_overskrift{
-    margin: 0rem 57rem 0rem 6rem;
+    margin: 3rem 57rem 0rem 6rem;
 }
 
 
@@ -90,3 +93,105 @@ padding-top: 8rem;
 
 </style>
 
+ 
+
+<script>
+
+import { gsap } from "gsap";
+    
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+
+gsap.registerPlugin(ScrollTrigger);
+
+  gsap.from(".scroll:nth-child(1)", {
+    xPercent: -100,
+    duration: 1,
+    stagger: 0.5,
+    scrollTrigger: {
+      trigger: ".scroll:nth-child(2)",
+      end: "bottom 80%",
+      scrub: true,
+      
+    },
+  });
+
+    gsap.from(".scroll:nth-child(2)", {
+    xPercent: 100,
+    duration: 1,
+    stagger: 0.5,
+    scrollTrigger: {
+      trigger: ".scroll:nth-child(2)",
+      end: "bottom 80%",
+      scrub: true,
+      
+    },
+  });
+
+
+
+   gsap.from(".scroll:nth-child(3)", {
+    xPercent: 100,
+    duration: 1,
+    stagger: 0.5,
+    scrollTrigger: {
+      trigger: ".scroll:nth-child(1)",
+      end: "bottom 80%",
+      scrub: true,
+      
+    },
+  });
+ gsap.from(".scroll:nth-child(4)", {
+    xPercent: -100,
+    duration: 1,
+    stagger: 0.5,
+    scrollTrigger: {
+      trigger: ".scroll:nth-child(3)",
+      end: "bottom 80%",
+      scrub: true,
+      
+    },
+  });
+
+ gsap.from(".scroll:nth-child(5)", {
+    xPercent: 100,
+    duration: 1,
+    stagger: 0.5,
+    scrollTrigger: {
+      trigger: ".scroll:nth-child(4)",
+      end: "bottom 80%",
+      scrub: true,
+      
+    },
+  });
+
+   gsap.from(".scroll:nth-child(6)", {
+    xPercent: -100,
+    duration: 1,
+    stagger: 0.5,
+    scrollTrigger: {
+      trigger: ".scroll:nth-child(5)",
+      end: "bottom 80%",
+      scrub: true,
+      
+    },
+  });
+
+  gsap.from(".scroll:nth-child(7)", {
+    xPercent: 100,
+    duration: 1,
+    stagger: 0.5,
+    scrollTrigger: {
+      trigger: ".scroll:nth-child(6)",
+      end: "bottom 80%",
+      scrub: true,
+      
+    },
+  });
+ 
+</script>
+
+
+
+
+ 

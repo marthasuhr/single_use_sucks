@@ -21,14 +21,7 @@ Miljøbiolog & stifter af Plastic Change</p>
 
 
 <style>
-.container{
-    background-image: url("../images/bølge.svg");
-     background-repeat: no-repeat;
-     background-position: bottom;
 
-
-
-}
 
 .citat_container{
     margin: 4rem;
@@ -44,6 +37,7 @@ img{
 
 
 .citation {
+    
 font-size: 8rem;
 font-weight: var(--regular);
    margin: 0rem 0rem -4rem -1rem;
@@ -64,7 +58,14 @@ img{
 /*Regler for web*/
         @media (min-width: 900px) {
 
-      
+      .container{
+    background-image: url("../images/bølge.svg");
+     background-repeat: no-repeat;
+     background-position: bottom;
+
+
+
+}
 
             
 
@@ -112,3 +113,17 @@ z-index: 10;
 }
 
 </style>
+
+<script>
+
+    import { gsap } from "gsap";
+    
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+
+gsap.registerPlugin(ScrollTrigger);
+
+ 
+
+
+</script>

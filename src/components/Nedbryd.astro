@@ -1,6 +1,7 @@
 ---
 import Ned1Card from "./Ned1Card.astro";
 import Ned2Card from "./Ned2Card.astro";
+import Button from "./Button.astro";
 
 ---
 <div class="gradiant">
@@ -32,11 +33,21 @@ import Ned2Card from "./Ned2Card.astro";
 <Ned1Card class="scroll" titel="PLASTIK FLASKE" tid="450+ ÅR" imgPath="../grafik/flaske.svg"/>
 </div>
 </div>
+<div class="button">
+<Button variant="Primary" size="Large">BLIV MEDLEM</Button>
 
-
+</div>
 
 <style>
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  padding-bottom: 10rem;
 
+
+}
 .gradiant{
 padding-top: 8rem;
     background-image: linear-gradient(var(--secondary-background), var(--primary-background) );

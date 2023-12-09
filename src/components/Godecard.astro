@@ -4,6 +4,47 @@ const{titel, tekst, imgPath} = Astro.props
 
 <section>
     <h2>{titel}</h2>
+    <div class="container">
     <p>{tekst}</p>
-    <p>{imgPath}</p>
+<img src={imgPath} alt="#">
+</div>
 </section>
+
+<style>
+
+section
+{
+    padding: 5rem 2rem 2rem 2rem;
+
+
+}
+
+h2{
+    width: 30;
+}
+p{
+      width: 20rem;
+}
+img{
+    width: 7rem;
+height: 7rem;
+}
+ .container{
+    display: flex;
+
+align-items: flex-start;
+gap: 4.375rem;
+ }
+ @media (min-width: 900px) {
+h2, p{
+      width: 46rem;
+}
+img{
+width: 6.18788rem;
+height: 15.94575rem;
+ }
+
+
+        }
+
+</style>

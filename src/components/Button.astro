@@ -1,0 +1,66 @@
+---
+const { variant, size } = Astro.props;
+---
+
+<button data-variant={variant} data-size={size} >
+  <slot />
+</button>
+
+<style>
+  
+  button {
+    border-radius: 0px;
+    border: none;
+
+  }
+
+  /* Variants */
+  [data-variant="Primary"] {
+    color: var(--font-white);
+background: var(--primary-background);
+  border: 3px solid var(--font-white); 
+
+
+  }
+  [data-variant="Primary"]:hover {
+    background: var(--primary-hover);
+    color: var(--font-white);
+  }
+
+   [data-variant="Secondary"] {
+   background:  var(----primary-red);
+    color: var(--font-white);
+  
+
+  }
+  [data-variant="Secondary"]:hover {
+   background: var(--secondary-hover);
+    color: var(--font-white);
+
+
+  }
+
+
+  [data-size="Large"] {
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 15px;
+  }
+
+  @media (min-width: 900px) {
+  
+   /* [data-size="Small"] {
+
+      padding-left: 2rem;
+      padding-right: 2rem;
+    } */
+    [data-size="Large"] {
+    
+      font-size: 24px;
+    
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+</style>

@@ -1,0 +1,35 @@
+---
+const{titel, tekst} = Astro.props
+import Button from "./Button.astro";
+---
+
+<section>
+    <h2>{titel}</h2>
+
+    <p>{tekst}</p>
+<div>
+<Button variant="Primary" size="Large">BLIV MEDLEM</Button>
+</section>
+
+<style>
+
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 3rem;
+        gap: 1.5rem;
+    }
+
+
+     @media (min-width: 900px) {
+
+        section{
+                  padding: 8rem 3rem 8rem 3rem;
+        gap: 3rem;
+
+        }
+     }
+
+</style>

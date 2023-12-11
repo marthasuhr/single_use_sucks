@@ -1,0 +1,47 @@
+---
+const { variant } = Astro.props;
+---
+
+<div id="line" class={variant}>
+  <slot />
+</div>
+
+<style>
+  #line {
+    width: 100vw;
+    height: 8px;
+    margin: 0 0 10px 0;
+    position: relative;
+    display: inline-block;
+  }
+
+  .primary {
+    background-color: var(--primary-red);
+  }
+
+  .secondary {
+    background-color: var(--secondary-background);
+  }
+
+  .tertiary {
+    background-color: var(--primary-hover);
+  }
+</style>
+
+<script>
+  import { gsap } from "gsap";
+  import { ScrollTrigger } from "gsap/ScrollTrigger";
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.from("#line", {
+    scrollTrigger: {
+      trigger: "#line",
+      scrub: true,
+      start: "top bottom",
+      end: "top top",
+    },
+    scaleX: 0,
+    transformOrigin: "left center",
+    ease: "none",
+  });
+</script>

@@ -9,30 +9,65 @@
 
     <div class="container_footer">
       <img class="logo" src="../images/logo.svg" alt="logo">
-      <a href="../pages/tips.astro">5 gode råd</a>
+      
+
+      <h3>Kontakt os</h3>
+        <p>Mail: info@plasticchange.org</p>
+        <p>Tlf: +45 42 66 72 46</p>
+        <p>Telefontid: <br> Mandag – Fredag: 10:00 – 15:00</p>
     
 
-        <p>Mail: info@plasticchange.org</p>
-        <p>Tlf: +45 66 72 46</p>
- <p>Telefontid: <br> Mandag – Fredag: 10:00 – 15:00</p>
-     <div>
-<img class="logo" src="../images/facebook.svg" alt="facebook">
-<img class="logo" src="../images/instagram.svg" alt="instagram">
-     </div>
+        <p>Følg os her</p>
+
+        <div class="icons_parent_container">
+        <img class="child1" src="../images/facebook.svg" alt="facebook">
+        <img class="child2" src="../images/instagram.svg" alt="instagram">
+      </div>
+
+   
+
+   
 
   </div>
-
-
-
 </footer>
 
 
 <style>
 
-.logo{
-  width: 73px;
-    height: 27px;
+
+
+.footer{
+  display: flex;
+  flex-direction: column;
 }
+  .container_footer{
+   display: flex;
+    flex-direction:column ;
+    justify-content: left;
+    align-items: left;
+    line-height: 2.5;
+  }
+
+  .logo{
+  width: 146px;
+    height: 48px;
+}
+
+.icons_parent_container{
+  display: inline-flex;
+
+}
+
+.child1{
+width: 58px;
+height: 58px;
+}
+
+.child2{
+width: 58px;
+height: 58px;
+}
+
 
 img{
       translate: 0 -65%;
@@ -44,9 +79,8 @@ img{
     background-color: var(--footer-brown);
   }
 
-  p{
-    text-decoration: none;
-  }
+
+
  
 
   @media (min-width: 900px) {
@@ -62,8 +96,8 @@ img{
 .logo
      {
 
-      width: 147px;
-      height: 55px;
+      width: 336px;
+      height: 110px;
     }
    
  

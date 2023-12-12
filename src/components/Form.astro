@@ -1,1 +1,64 @@
-/* Formularen */
+---
+import Button from "./Button.astro";
+---
+
+<form>
+
+<h1>Bliv medlem</h1>
+
+<p>For kun 350 kr. / årligt kan du være med i kampen for et sundt havmiljø.</p>
+
+ <label for="fname">Fornavn</label><br>
+  <input type="text" id="fnavn" name="fname">
+
+  <label for="lname">Efternavn</label><br>
+  <input type="text" id="enavn" name="lname">
+
+   <label for="email">E-mail</label><br>
+  <input type="text" id="enavn" name="lname">
+  
+   <label for="mobil">Mobilnummer</label><br>
+  <input type="text" id="enavn" name="lname">
+
+   <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="mpay">Mobilepay</label><br>
+
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="bservice">Betalingservice</label><br>
+
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="privat">Læs vores betingelser og privatlivspolitik her</label><br>
+  
+</form>
+
+<style>
+form { 
+   
+   width: 21,875rem; 
+
+   height: 58,125rem; 
+   
+   flex-shrink: 0;
+
+  border: 10rem ;
+   
+   padding: 8rem ;
+
+   background-color: var(--font-white); 
+
+   @media (min-width: 900px) 
+
+
+}
+
+h1 {color: var(--primary-red);}
+
+label {color: var(--font-black);}
+
+p {color: var(--font-black);}
+
+privat {}
+
+</style>
+
+

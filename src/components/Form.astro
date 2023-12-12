@@ -4,36 +4,45 @@ import Button from "./Button.astro";
 
 <form>
 
-<h1>Bliv medlem</h1>
+<h1 class="overskrift">Bliv medlem</h1>
 
-<p>For kun 350 kr. / årligt kan du være med i kampen for et sundt havmiljø.</p>
+<p class="underskrift">For kun 350 kr. / årligt kan du være med i kampen for et sundt havmiljø.</p>
 
-<div>
+<div class="felter">
+
  <label for="fname">Fornavn</label><br>
   <input type="text" id="fnavn" name="fname">
 
-  <label for="lname">Efternavn</label><br>
+  <label for="ename">Efternavn</label><br>
   <input type="text" id="enavn" name="lname">
 
    <label for="email">E-mail</label><br>
-  <input type="text" id="enavn" name="lname">
+  <input type="text" id="email" name="lname">
   
    <label for="mobil">Mobilnummer</label><br>
-  <input type="text" id="enavn" name="lname">
+  <input type="text" id="mobil" name="lname">
+
 </div>
 
-<div>
-   <input type="radio" id="html" name="fav_language" value="HTML">
-  <label for="mpay">Mobilepay</label><br>
+<div class="betaling">
 
-  <input type="radio" id="css" name="fav_language" value="CSS">
-  <label for="bservice">Betalingservice</label><br>
+
+  <input type="checkbox" id="mobil" name="mobilpay" value="mobilepay">
+  <label for="mpay"> Mobilepay</label><br>
+
+  <input type="checkbox" id="bservice" name="betaling" value="betaling">
+  <label for="bservice"> Betalingsservice</label><br>
+
 </div>
 
-<div>
-  <input type="radio" id="css" name="fav_language" value="CSS">
-  <label for="privat">Læs vores betingelser og privatlivspolitik her</label><br>
+<div class="privat">
+
+  <input type="checkbox" id="privat" name="privat" value="privat">
+  <label for="bservice">Læs vores betingelser og privatlivspolitik her </label><br>
+
   </div>
+
+<Button variant="Primary" size="Large">BLIV MEDLEM</Button>
 
 </form>
 
@@ -45,30 +54,64 @@ form {
 
   padding-top: 2rem;
 
-
-
-background-color: var(--font-white);
+background-color: var(--font-white); }
 
   input {
-    width: 18rem;
+    width: 25rem;
     padding: 1rem;
     margin: 1rem;
-    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
    
 }
 
+label { font-family: "Rubik";}
 
+.felter {
+label {
+   padding-right: 5rem;
+   padding-left: 1rem;
+   text-align: left;
+
+}
+
+}
+.overskrift {
+   padding-bottom: 1rem;
+   padding-left: 1rem;
+}
+
+.underskrift { 
+   padding-top: 0,5rem;
+   padding-bottom: 3rem;
+   padding-left: 1rem;
+
+}
+.betaling {
+   padding-right: 5rem;
+   padding-left: 1rem;
+   padding-top: 1rem;
+   text-align: left
+
+}
+
+.privat {
+  
+   padding-right: 5rem;
+   padding-left: 1rem;
+   text-align: left
+   
 
 }
 
 
-h1 {color: var(--font-black);}
+h1 {color: var(--primary-hover);}
 
 label {color: var(--font-black);}
 
 p {color: var(--font-black);}
 
+button {
+
+}
 
    @media (min-width: 900px) {
 

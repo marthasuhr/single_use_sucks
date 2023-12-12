@@ -26,18 +26,18 @@ import Button from "./Button.astro";
 
 <div class="betaling">
 
-  <label for="mpay"> Mobilepay</label><br>
-  <input type="checkbox" id="mobil" name="mobilpay" value="mobilepay">
+  <label  for="mpay"> Mobilepay</label><br>
+  <input  type="checkbox" id="mpay" name="mobilpay" value="mobilepay">
 
-  <label for="bservice"> Betalingsservice</label><br>
-  <input type="checkbox" id="bservice" name="betaling" value="betaling">
+  <label  for="bservice"> Betalingsservice</label><br>
+  <input  type="checkbox" id="bservice" name="betaling" value="betaling">
 
 </div>
 
 <div class="privat">
 
-  <label for="bservice">Læs vores betingelser og privatlivspolitik her </label><br>
-  <input type="checkbox" id="privat" name="privat" value="privat">
+  <label  for="bservice">Læs vores betingelser og privatlivspolitik her </label><br>
+  <input  type="checkbox" id="privat" name="privat" value="privat">
 
   </div>
 
@@ -55,6 +55,7 @@ form {
 
 background-color: var(--font-white); }
 
+
   input {
     width: 25rem;
     padding: 1rem;
@@ -62,15 +63,11 @@ background-color: var(--font-white); }
    
 }
 
-label { font-family: "Rubik";}
+
+
 
 .felter {
-label {
-   padding-right: 5rem;
-   padding-left: 1rem;
-   text-align: left;
 
-}
 
 }
 .overskrift {
@@ -91,29 +88,35 @@ label {
    text-align: left
 
 }
-
 .privat {
-  
+
    padding-right: 5rem;
    padding-left: 1rem;
    text-align: left
-   
 
 }
 
+/* teksstyling*/
 
 h1 {color: var(--primary-hover);}
 
-label {color: var(--font-black);}
+label {color: var(--font-black); font-family: "Rubik";
+ padding-right: 5rem;
+ padding-left: 1rem;
+ text-align: left;
+}
 
 p {color: var(--font-black);}
 
-button {
+
+/* website */
+   @media (min-width: 900px) {
+label {
+   padding-right: 20rem;
+   padding-left: 1rem;
+   text-align: left;
 
 }
-
-   @media (min-width: 900px) {
-
 
    }
 

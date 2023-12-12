@@ -1,0 +1,89 @@
+---
+import Linje from "../components/Linje.astro";
+import Fotos from "../components/Fotos.astro";
+---
+
+<section>
+
+    <Linje variant="primary"/>
+    <div class="container">
+    <div class="overskrift">
+    <h2>BLIV AKTIV I KAMPEN MOD FORURE
+        NING! 
+</h2>
+<p>#SINGLEUSESUCKS</p>
+</div>
+<div class="ikoner">
+      <li class="ikon"><a href="#"><img src="../images/rødfacebook.svg" alt="facebook"></a></li>
+  <li class="ikon"><a href="#"><img src="../images/rødinstagram.svg" alt="insta"></a></li>
+
+  </div>
+
+  <Fotos/>
+  </div>
+</section>
+
+<style>
+
+    .overskrift{
+    margin: 3rem 1rem 3rem 1rem;
+
+    }
+
+section{
+    background-color: var(--font-white);
+    padding-bottom: 4rem;
+
+}
+ .ikoner{
+display: flex;
+
+padding: 0rem 1rem 1.5rem 1rem;
+gap: 1rem;
+
+ }
+
+
+
+h2,p{
+    color: var(--primary-background);
+}
+
+h2{
+    padding-bottom: 1.5rem;
+}
+
+  img {
+    width: 2.5rem;
+    height: 2.7;
+  }
+
+  @media (min-width: 750px) {
+
+     .container{
+    margin: 3rem 8rem 6rem 8rem;
+
+    }}
+  @media (min-width: 900px) {
+
+ .ikoner{
+
+padding: 0rem 1rem 1.5rem 0rem;
+      translate: -2.5% 0;
+gap: none;
+
+
+ }
+
+  
+      .container{
+    margin: 3rem 8rem 6rem 8rem;
+
+    }
+    img
+     {
+      width: 147px;
+      height: 55px;
+    }}
+
+</style>

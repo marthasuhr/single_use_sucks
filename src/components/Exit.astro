@@ -1,40 +1,18 @@
 ---
 ---
 
-
-    <div class="exit-icon">
-      <div class="line"></div>
-      <div class="line"></div>
-    </div>
+<ul>
+  <div class="exit">
+    <a href="index.astro"><img src="../grafik/exit.svg" alt=""></a>
+  </div>
+</ul>
  
   
 <style>
   
-  
-  .exit-icon {
-    width: 30px;
-    height: 30px;
-    position: relative;
-    transform: rotate(45deg);
-left: 90%; 
+  .exit{
+    max-width: 2rem;
    
   }
   
-  .line {
-    width: 100%;
-    height: 2px;
-    background-color: var(--font-white);
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform-origin: center;
-  }
-  
-  .line:nth-child(2) {
-    transform: rotate(90deg);
-  }
-
-  .line:hover{
-    background-color: var(--primary-red);
-  }
 </style>

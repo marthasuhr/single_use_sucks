@@ -4,15 +4,16 @@ import Button from "./Button.astro";
 
 <form>
 
-<h1>Bliv medlem</h1>
+<h1 class="overskrift">Bliv medlem</h1>
 
-<p>For kun 350 kr. / årligt kan du være med i kampen for et sundt havmiljø.</p>
+<p class="underskrift">For kun 350 kr. / årligt kan du være med i kampen for et sundt havmiljø.</p>
 
-<div>
+<div class="felter">
+
  <label for="fname">Fornavn</label><br>
   <input type="text" id="fnavn" name="fname">
 
-  <label for="lname">Efternavn</label><br>
+  <label for="ename">Efternavn</label><br>
   <input type="text" id="enavn" name="lname">
 
    <label for="email">E-mail</label><br>
@@ -22,7 +23,8 @@ import Button from "./Button.astro";
   <input type="text" id="enavn" name="lname">
 </div>
 
-<div>
+<div class="betaling">
+
    <input type="radio" id="html" name="fav_language" value="HTML">
   <label for="mpay">Mobilepay</label><br>
 
@@ -30,7 +32,8 @@ import Button from "./Button.astro";
   <label for="bservice">Betalingservice</label><br>
 </div>
 
-<div>
+<div class="privat">
+
   <input type="radio" id="css" name="fav_language" value="CSS">
   <label for="privat">Læs vores betingelser og privatlivspolitik her</label><br>
   </div>
@@ -45,8 +48,6 @@ form {
 
   padding-top: 2rem;
 
-
-
 background-color: var(--font-white);
 
   input {
@@ -58,6 +59,30 @@ background-color: var(--font-white);
    
 }
 
+.felter {
+label {
+   padding: 1rem;
+
+}
+
+}
+
+.betaling {
+
+}
+
+.privat {
+
+}
+.overskrift {
+   padding-bottom: 1rem;
+}
+
+.underskrift { 
+   padding-top: 0,5rem;
+   padding-bottom: 3rem;
+
+}
 
 
 }
@@ -68,6 +93,7 @@ h1 {color: var(--font-black);}
 label {color: var(--font-black);}
 
 p {color: var(--font-black);}
+
 
 
    @media (min-width: 900px) {

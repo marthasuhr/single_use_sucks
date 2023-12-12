@@ -8,6 +8,7 @@ import Button from "./Button.astro";
 
 <p>For kun 350 kr. / årligt kan du være med i kampen for et sundt havmiljø.</p>
 
+<div>
  <label for="fname">Fornavn</label><br>
   <input type="text" id="fnavn" name="fname">
 
@@ -19,16 +20,21 @@ import Button from "./Button.astro";
   
    <label for="mobil">Mobilnummer</label><br>
   <input type="text" id="enavn" name="lname">
+</div>
 
+<div>
    <input type="radio" id="html" name="fav_language" value="HTML">
   <label for="mpay">Mobilepay</label><br>
 
   <input type="radio" id="css" name="fav_language" value="CSS">
   <label for="bservice">Betalingservice</label><br>
+</div>
 
+<div>
   <input type="radio" id="css" name="fav_language" value="CSS">
   <label for="privat">Læs vores betingelser og privatlivspolitik her</label><br>
-  
+  </div>
+
 </form>
 
 
@@ -37,9 +43,9 @@ form {
 
   padding-bottom: 1rem;
 
-  padding-top: 5rem;
+  padding-top: 2rem;
 
-  height: 33rem;
+
 
 background-color: var(--font-white);
 

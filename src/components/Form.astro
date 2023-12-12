@@ -21,6 +21,7 @@ import Button from "./Button.astro";
   
    <label for="mobil">Mobilnummer</label><br>
   <input type="text" id="mobil" name="lname">
+
 </div>
 
 <div class="betaling">
@@ -36,9 +37,12 @@ import Button from "./Button.astro";
 
 <div class="privat">
 
-  <input type="radio" id="css" name="privat" value="CSS">
-  <label for="privat">Læs vores betingelser og privatlivspolitik her</label><br>
+  <input type="checkbox" id="privat" name="privat" value="privat">
+  <label for="bservice">Læs vores betingelser og privatlivspolitik her </label><br>
+
   </div>
+
+<Button variant="Primary" size="Large">BLIV MEDLEM</Button>
 
 </form>
 
@@ -56,8 +60,6 @@ background-color: var(--font-white); }
     width: 25rem;
     padding: 1rem;
     margin: 1rem;
-    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
    
 }
 
@@ -84,12 +86,10 @@ label {
 
 }
 .betaling {
-
-  
    padding-right: 5rem;
    padding-left: 1rem;
+   padding-top: 1rem;
    text-align: left
-   
 
 }
 
@@ -109,7 +109,9 @@ label {color: var(--font-black);}
 
 p {color: var(--font-black);}
 
+button {
 
+}
 
    @media (min-width: 900px) {
 

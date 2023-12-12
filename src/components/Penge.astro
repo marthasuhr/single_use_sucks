@@ -1,5 +1,12 @@
+---
+import Linje from "../components/Linje.astro";
+---
+
+
 <section>
-    <div>
+    <Linje variant="primary"/>
+    <div class="container">
+    <div class="tekst_container">
 <h2>HVAD GÅR MINE PENGE TIL?</h2>
 <p>Som medlem spiller dit medlemsbidrag en afgørende rolle i at opnå Plastic Changes mission om en verden med mindre plastforurening og mere bæredygtige havmiljøer. 
 <br> <br>
@@ -8,21 +15,43 @@ Hver støtte tæller, og med 350 kr kan medlemmer være med til at gøre en posi
 <div>
 <img src="../images/pengekop.png" alt="penge">
 </div>
-</section>
+</div>
 
+</section>
+    <Linje variant="secondary"/>
 <style>
-    section{
-     
-        background-color: var(--font-white);
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
+
+  .container{
+            padding: 1rem 2rem 1rem 2rem;
+                    background-color: var(--font-white);
+  }
     h2{
         padding-top: 3rem;
     color: var(--primary-red);
     }
     p{
         color: var(--font-black);
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    img{
+        display: none;
+    }
+
+    @media  (min-width: 900px) {
+        img{
+            display: block;
+        }
+          .tekst_container{
+        padding: 1rem 2rem 1rem 2rem;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+padding: 0rem 0rem 0rem 0rem;
+    }
+        
     }
 
 </style>

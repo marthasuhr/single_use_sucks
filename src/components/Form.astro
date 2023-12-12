@@ -17,24 +17,26 @@ import Button from "./Button.astro";
   <input type="text" id="enavn" name="lname">
 
    <label for="email">E-mail</label><br>
-  <input type="text" id="enavn" name="lname">
+  <input type="text" id="email" name="lname">
   
    <label for="mobil">Mobilnummer</label><br>
-  <input type="text" id="enavn" name="lname">
+  <input type="text" id="mobil" name="lname">
 </div>
 
 <div class="betaling">
 
-   <input type="radio" id="html" name="fav_language" value="HTML">
-  <label for="mpay">Mobilepay</label><br>
 
-  <input type="radio" id="css" name="fav_language" value="CSS">
-  <label for="bservice">Betalingservice</label><br>
+  <input type="checkbox" id="mobil" name="mobilpay" value="mobilepay">
+  <label for="mpay"> Mobilepay</label><br>
+
+  <input type="checkbox" id="bservice" name="betaling" value="betaling">
+  <label for="bservice"> Betalingsservice</label><br>
+
 </div>
 
 <div class="privat">
 
-  <input type="radio" id="css" name="fav_language" value="CSS">
+  <input type="radio" id="css" name="privat" value="CSS">
   <label for="privat">Læs vores betingelser og privatlivspolitik her</label><br>
   </div>
 
@@ -48,7 +50,7 @@ form {
 
   padding-top: 2rem;
 
-background-color: var(--font-white);
+background-color: var(--font-white); }
 
   input {
     width: 25rem;
@@ -70,25 +72,6 @@ label {
 }
 
 }
-
-.betaling {
-   label {
-   padding-right: 5rem;
-   padding-left: 1rem;
-   text-align: left
-   }
-
-}
-}
-
-.privat {
-  label {
-   padding-right: 5rem;
-   padding-left: 1rem;
-   text-align: left
-   }
-   
-}
 .overskrift {
    padding-bottom: 1rem;
    padding-left: 1rem;
@@ -100,7 +83,22 @@ label {
    padding-left: 1rem;
 
 }
+.betaling {
 
+  
+   padding-right: 5rem;
+   padding-left: 1rem;
+   text-align: left
+   
+
+}
+
+.privat {
+  
+   padding-right: 5rem;
+   padding-left: 1rem;
+   text-align: left
+   
 
 }
 

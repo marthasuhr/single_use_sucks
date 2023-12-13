@@ -15,10 +15,6 @@ Miljøbiolog & stifter af Plastic Change</p>
 </p>
 </div>
 
-<div>
-<img class="hval" src={imgPath} alt="Hval">
-
-</div>
 
 
 <style>
@@ -31,9 +27,7 @@ Miljøbiolog & stifter af Plastic Change</p>
     
 }
 
-img{
-    display: none;
-}
+
 
 
 
@@ -43,6 +37,13 @@ font-size: 8rem;
 font-weight: var(--regular);
    margin: 0rem 0rem -4rem -1rem;
     }
+
+   .citat1{
+margin-bottom: 4rem;
+
+}
+
+
 /*Regler for Tablet*/
 
 @media (min-width: 750px) {
@@ -50,9 +51,7 @@ font-weight: var(--regular);
 margin: 1rem 6rem 1rem 6rem;
 }
 
-img{
-    display: none;
-}
+
 
 }
 
@@ -60,11 +59,9 @@ img{
         @media (min-width: 900px) {
 
       .container{
-    background-image: url("../images/bølge.svg");
+    background-image: url("../images/citatbølge.svg");
      background-repeat: no-repeat;
      background-position: bottom;
-
-
 
 }
 
@@ -77,19 +74,10 @@ font-weight: var(--regular)
 
 
     }
-    img{
-        display: block;
+ 
 
-    }
+ 
 
-    .hval{
-        display: grid;
-margin: 10rem 0rem 0rem 0rem;
-        height: 29.375rem;
-flex-shrink: 0;
-
-
-}
 .citat_container{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -103,15 +91,8 @@ margin: 2rem 2rem 0rem 12rem;
 margin-bottom: 4rem;
 
 }
-
-/* .havbaggrund{
-width: 94.625rem;
-height: 0rem;
-flex-shrink: 0;
-z-index: 10;
-} */
-
 }
+
 
 </style>
 

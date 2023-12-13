@@ -1,5 +1,6 @@
 ---
 import Linje from "../components/Linje.astro";
+import Button from "../components/Button.astro";
 ---
 
 
@@ -13,7 +14,11 @@ import Linje from "../components/Linje.astro";
 Hver støtte tæller, og med 350 kr kan medlemmer være med til at gøre en positiv forskel for vores hav og fremtidige generationer.</p>
 </div>
 <div>
-<img src="../images/pengekop.png" alt="penge">
+<img src="../grafik/fiske.svg" alt="penge">
+<p  >Læs om hvordan du kan gøre en forskel i din hverdag!</p>
+<div class="button">
+<Button variant="Primary" size="Large" >5 GODE RÅD</Button>
+</div>
 </div>
 </div>
 
@@ -39,12 +44,23 @@ Hver støtte tæller, og med 350 kr kan medlemmer være med til at gøre en posi
         display: none;
     }
 
+    .button{
+        display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+    }
+
     @media  (min-width: 900px) {
         img{
             display: block;
+            padding: 2rem 2rem 1rem 0;
+            max-height: 428px;
+    
         }
           .tekst_container{
-        padding: 1rem 2rem 1rem 2rem;
+        padding: 1rem 2rem 1rem 4rem;
     }
     .container{
         display: grid;

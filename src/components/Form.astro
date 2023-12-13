@@ -63,18 +63,12 @@ import Button from "./Button.astro";
    /* Formularen */
 form { 
 
+  border: 6rem;
   padding-bottom: 1rem;
   padding-top: 2rem;
   background-color: var(--font-white); }
 
 
-  input {
-    width: 25rem;
-    padding: 1rem;
-    margin: 1rem;
-  }
-   
-    
 .overskrift {
    padding-bottom: 1rem;
    padding-left: 1rem;
@@ -102,8 +96,14 @@ form {
 
 /* input bokse for betaling og privatpolitik */
 
-input [name="mobilepay"] {
-   border: 3rem;
+input {
+   width: 25rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+input [type=checkbox] {
+
 }
 
 /* teksstyling*/
@@ -140,6 +140,7 @@ hr {
    opacity: 50%;
    width: 90%;
    margin: auto;
+   
    
 }
 

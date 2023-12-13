@@ -10,9 +10,9 @@ import Button from "./Button.astro";
 
 <hr>
 
-<div>
+ <p>Oplysninger</p>
 
-   <p>Oplysninger</p>
+<div>
 
  <label for="fname">Fornavn</label><br>
   <input type="text" id="fnavn" name="fname">
@@ -30,9 +30,9 @@ import Button from "./Button.astro";
 
 <hr>
 
-<div class="betaling">
+ <p>Betalingsoplysninger</p>
 
-   <p>Betalingsoplysninger</p>
+<div class="betaling">
 
   <label  for="mpay"> Mobilepay</label><br>
   <input  type="checkbox" id="mpay" name="mobilepay" value="mobilepay">
@@ -63,18 +63,12 @@ import Button from "./Button.astro";
    /* Formularen */
 form { 
 
+  border: 6rem;
   padding-bottom: 1rem;
   padding-top: 2rem;
   background-color: var(--font-white); }
 
 
-  input {
-    width: 25rem;
-    padding: 1rem;
-    margin: 1rem;
-  }
-   
-    
 .overskrift {
    padding-bottom: 1rem;
    padding-left: 1rem;
@@ -88,20 +82,28 @@ form {
 }
 .betaling {
    padding-right: 5rem;
-   padding-top: 2rem;
+   padding-top: 0,5rem;
+   padding-bottom: 2rem;
    text-align: left
 }
 
 .privat {
-   padding-top: 1rem;
+   padding-top: 3rem;
+   padding-bottom: 1rem;
    text-align: left
 
 }
 
 /* input bokse for betaling og privatpolitik */
 
-input [name="mobilepay"] {
-   border: 3rem;
+input {
+   width: 25rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+input [type=checkbox] {
+
 }
 
 /* teksstyling*/
@@ -114,10 +116,15 @@ label {color: var(--font-black); font-family: "Rubik";
  text-align: left;
 }
 
-p {color: var(--font-black);}
+p {color: var(--font-black);
+padding-top: 2rem;
+padding-bottom: 2rem;
+ padding-left: 1rem;
+ text-align: left;}
 
 .her {
 color: var(--primary-red);
+font-size: medium
 }
 
 /*Knap */
@@ -132,6 +139,7 @@ color: var(--primary-red);
 hr {
    opacity: 50%;
    width: 90%;
+   margin: auto;
    
 }
 

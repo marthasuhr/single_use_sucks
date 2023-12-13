@@ -8,7 +8,11 @@ import Button from "./Button.astro";
 
 <p class="underskrift">For kun 350 kr. / årligt kan du være med i kampen for et sundt havmiljø.</p>
 
-<div class="felter">
+<hr>
+
+<div>
+
+   <p>Oplysninger</p>
 
  <label for="fname">Fornavn</label><br>
   <input type="text" id="fnavn" name="fname">
@@ -24,52 +28,53 @@ import Button from "./Button.astro";
 
 </div>
 
+<hr>
+
 <div class="betaling">
 
+   <p>Betalingsoplysninger</p>
+
   <label  for="mpay"> Mobilepay</label><br>
-  <input  type="checkbox" id="mpay" name="mobilpay" value="mobilepay">
+  <input  type="checkbox" id="mpay" name="mobilepay" value="mobilepay">
 
   <label  for="bservice"> Betalingsservice</label><br>
   <input  type="checkbox" id="bservice" name="betaling" value="betaling">
 
 </div>
 
-<div class="privat">
+<hr>
 
-  <label  for="bservice">Læs vores betingelser og privatlivspolitik her </label><br>
-  <input  type="checkbox" id="privat" name="privat" value="privat">
+<div class="privat">
+ 
+   <label  for="privat">Læs vores betingelser og privatlivspolitik her </label><br>
+  <input type="checkbox" id="privat" name="privat" value="privat">
 
   </div>
 
+  <div class="button">
 <Button variant="Primary" size="Large">BLIV MEDLEM</Button>
+</div>
 
 </form>
 
 
 <style>
+
+   /* Formularen */
 form { 
 
   padding-bottom: 1rem;
-
   padding-top: 2rem;
-
-background-color: var(--font-white); }
+  background-color: var(--font-white); }
 
 
   input {
     width: 25rem;
     padding: 1rem;
     margin: 1rem;
+  }
    
-}
-
-
-
-
-.felter {
-
-
-}
+    
 .overskrift {
    padding-bottom: 1rem;
    padding-left: 1rem;
@@ -83,17 +88,20 @@ background-color: var(--font-white); }
 }
 .betaling {
    padding-right: 5rem;
-   padding-left: 1rem;
-   padding-top: 1rem;
+   padding-top: 2rem;
    text-align: left
 
 }
 .privat {
-
-   padding-right: 5rem;
-   padding-left: 1rem;
+   padding-top: 1rem;
    text-align: left
 
+}
+
+/* input bokse for betaling og privatpolitik */
+
+input [name="mobilepay"] {
+   border: 3rem;
 }
 
 /* teksstyling*/
@@ -108,16 +116,26 @@ label {color: var(--font-black); font-family: "Rubik";
 
 p {color: var(--font-black);}
 
+/*Knap */
+
+.button {
+   text-align: center;
+}
+
 
 /* website */
    @media (min-width: 900px) {
+
+form {
+
+}
+
 label {
-   padding-right: 20rem;
+   padding-right: 2rem;
    padding-left: 1rem;
    text-align: left;
 
 }
-
    }
 
 </style>

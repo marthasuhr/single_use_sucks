@@ -1,29 +1,23 @@
----
-
----
-
-
 <footer>
 
     <img src="../grafik/footerflasker.svg" alt="footer">
 
     <div class="container_footer">
-      <img class="logo" src="../images/logo.svg" alt="logo">
-      
-
+<div>
       <h3>Kontakt os</h3>
+      
         <p>Mail: info@plasticchange.org</p>
         <p>Tlf: +45 42 66 72 46</p>
         <p>Telefontid: <br> Mandag – Fredag: 10:00 – 15:00</p>
-    
-
+           </div>
+               <div>
+        <img class="logo" src="../images/logo.svg" alt="logo">
         <p>Følg os her</p>
-
         <div class="icons_parent_container">
         <img class="child1" src="../images/facebook.svg" alt="facebook">
         <img class="child2" src="../images/instagram.svg" alt="instagram">
       </div>
-
+</div>
    
 
    
@@ -34,12 +28,6 @@
 
 <style>
 
-
-
-.footer{
-  display: flex;
-  flex-direction: column;
-}
   .container_footer{
    display: flex;
     flex-direction:column ;
@@ -51,29 +39,27 @@
   .logo{
   width: 146px;
     height: 48px;
+    margin-top: 3.5rem;
 }
 
 .icons_parent_container{
   display: inline-flex;
-
+  gap: 1rem;
+  margin-top: 3.5rem;
 }
 
-.child1{
+.child1, .child2{
 width: 58px;
 height: 58px;
 }
 
-.child2{
-width: 58px;
-height: 58px;
-}
 
 
 img{
       translate: 0 -65%;
-
-
 }
+
+
   footer {
     padding: 1.5rem;
     background-color: var(--footer-brown);
@@ -86,16 +72,16 @@ img{
   @media (min-width: 900px) {
     footer {
       padding: 3rem;
+      margin-right: 0%;
     }
 
     .container_footer{
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
 
 .logo
      {
-
       width: 336px;
       height: 110px;
     }

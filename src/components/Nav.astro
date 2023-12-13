@@ -1,51 +1,104 @@
-
-
-
- <ul>
-    <div>
-  <li><a href="index"><img src="../images/logo.svg" alt="logo"></a></li>
-  <li><a href="tips">5 GODE RÅD</a></li>
+ <ul><div 
+  class="navi">
+  <li class="logo"><a href="."><img src="../images/logo.svg" alt="logo"></a></li>
+  <li class="goderad" ><a href="../tips">5 GODE RÅD</a></li>
   </div>
-<div>
+
+
+<div class="icons">
   <li ><a href="#"><img src="../images/instagram.svg" alt="insta"></a></li>
   <li ><a href="#"><img src="../images/facebook.svg" alt="facebook"></a></li>
   </div>
 </ul> 
-
+<div class="divider"></div>
 
 
 <style>
 
 
+.navi{
+
+
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+list-style-type: none;
+align-items: center;
+
+}
+.icons{
+  display: none;
+}
+.divider{
+border-bottom: 1px solid var(--font-white);
+}
 
  ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+  background-color: none;
+  display: flex;
+justify-content: left;
+list-style-type: none;
+align-items: center;
+padding: 1rem 0 1rem 1rem;
+
+
 }
 
-li {
-  float: left;
-
+a{
+    color: var(--font-white);
+    text-decoration: none;
 }
 
-li a {
-  display: block;
-  color: white;
+a:hover{
+  transform: scale(1.2);
+  color: var(--primary-red);
+}
+
+.goderad {
+
   text-align: center;
-  padding: 14px 16px;
+
   text-decoration: none;
+    align-items: center;
+
 }
+
+
    img {
-    width: 73px;
-    height: 27px;
+    display: flex;
+
+    width: 324px;
+    height: 42px;
+
   }
+
+
+  
   @media (min-width: 900px) {
+
+.icons{
+  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+
+
+}
     img
      {
-
-      width: 147px;
+      
+      width: 168px;
       height: 55px;
-    }}
+    }
+
+  }
+
+
+    
 </style>
+
+
+<!-- <div class="icons">
+  <li ><a href="#"><img src="../images/instagram.svg" alt="insta"></a></li>
+  <li ><a href="#"><img src="../images/facebook.svg" alt="facebook"></a></li>
+  </div> -->

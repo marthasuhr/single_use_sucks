@@ -5,14 +5,38 @@ import Form from "./Form.astro";
 
 
 <section>
+    <div class="hero">
+    <div class="display">
     <Display/>
+    </div>
+<div class="form">
     <Form/>
+    </div>
+    </div>
 </section>
 
 <style>
 
-section{
+.hero{
+    display: grid;
+    grid-template-columns: repeat(1fr 1fr);
+overflow: hidden;
+padding: 0 1rem 1rem 1rem;
+}
+
+.form{
+    padding: 4rem 0  0;
 
 }
+   
+   @media (min-width: 900px) {
+.display{
+    grid-column: 1;
+}
+
+.form{
+    grid-column: 2;
+}
+   }
 
 </style>

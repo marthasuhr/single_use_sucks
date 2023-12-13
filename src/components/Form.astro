@@ -1,10 +1,11 @@
 ---
 import Button from "./Button.astro";
+
 ---
 
 <form>
 
-<h1 class="overskrift">Bliv medlem</h1>
+<h2 class="overskrift">Bliv medlem</h2>
 
 <p class="underskrift">For kun 350 kr. / årligt kan du være med i kampen for et sundt havmiljø.</p>
 
@@ -97,7 +98,7 @@ form {
 /* input bokse for betaling og privatpolitik */
 
 input {
-   width: 25rem;
+   max-width: 25rem;
     padding: 1rem;
     margin: 1rem;
 }
@@ -108,15 +109,18 @@ input [type=checkbox] {
 
 /* teksstyling*/
 
-h1 {color: var(--primary-hover);}
+h2 {color: var(--primary-hover);}
 
-label {color: var(--font-black); font-family: "Rubik";
+label {
+   color: var(--font-black); 
+   font-family: "Rubik";
  padding-right: 5rem;
  padding-left: 1rem;
  text-align: left;
 }
 
-p {color: var(--font-black);
+p {
+   color: var(--font-black);
 padding-top: 2rem;
 padding-bottom: 2rem;
  padding-left: 1rem;
@@ -147,6 +151,7 @@ hr {
    @media (min-width: 900px) {
 
 form {
+max-width: 35rem;
 
 }
 

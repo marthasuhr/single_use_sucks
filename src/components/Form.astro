@@ -46,7 +46,7 @@ import Button from "./Button.astro";
 
 <div class="privat">
  
-   <label  for="privat">Læs vores betingelser og privatlivspolitik her </label><br>
+   <label  for="privat">Læs vores betingelser og privatlivspolitik <p class="her">her </p></label><br>
   <input type="checkbox" id="privat" name="privat" value="privat">
 
   </div>
@@ -90,8 +90,8 @@ form {
    padding-right: 5rem;
    padding-top: 2rem;
    text-align: left
-
 }
+
 .privat {
    padding-top: 1rem;
    text-align: left
@@ -116,12 +116,24 @@ label {color: var(--font-black); font-family: "Rubik";
 
 p {color: var(--font-black);}
 
+.her {
+color: var(--primary-red);
+}
+
 /*Knap */
 
 .button {
    text-align: center;
 }
 
+
+/* linjer */
+
+hr {
+   opacity: 50%;
+   width: 90%;
+   
+}
 
 /* website */
    @media (min-width: 900px) {

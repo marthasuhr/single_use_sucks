@@ -18,6 +18,7 @@
   --regular: 400;
   --medium: 500;
   --bold: 600;
+  --verybold: 700;
 }
 
 /* Reset */
@@ -78,6 +79,37 @@ a {
   font-family: "Rubik", sans-serif;
   font-size: 1rem;
   font-weight: var(--regular);
+}
+
+/* Formular fonter */
+
+/* Formular H2 */
+.formular_h2 {
+  font-family: Rubik;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: var(--verybold);
+  line-height: normal;
+}
+
+/* Formular p Bold */
+.formular_p_bold {
+  color: var(--color-font-black, #000);
+  font-family: Rubik;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: var(--verybold);
+  line-height: normal;
+}
+
+/* Formular p */
+.formular_p {
+  color: var(--color-font-black, #000);
+  font-family: Rubik;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: var(--regular);
+  line-height: normal;
 }
 
 @media (min-width: 900px) {

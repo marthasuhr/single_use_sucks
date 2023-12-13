@@ -1,0 +1,190 @@
+---
+import Button from "./Button.astro";
+
+---
+
+<form>
+
+    <div class="blivmedlem_container">
+
+<h2 class="formular_h2">Bliv medlem</h2>
+
+<p class="formular_p"  >For kun 350 kr. / årligt kan du være med i kampen for et sundt havmiljø.</p>
+</div>
+<hr>
+
+ <p class="formular_p_bold" >Oplysninger</p>
+
+<div class="container1">
+<span>
+ <label for="fname">Fornavn</label> <br>
+  <input type="text" id="fnavn" name="fname" >
+</span>
+<span>
+  <label for="ename">Efternavn</label> <br>
+  <input type="text" id="enavn" name="lname" >
+</span>
+<span>
+   <label for="email">E-mail</label> <br>
+  <input type="text" id="email" name="lname" >
+  </span>
+  <span>
+   <label for="mobil">Mobilnummer</label> <br>
+  <input type="text" id="mobil" name="lname" >
+</span>
+</div>
+
+<hr>
+
+ <p class="formular_p_bold" >Betalingsoplysninger</p>
+
+<div class="betaling">
+
+  <label  for="mpay"> Mobilepay</label>
+  <input  type="checkbox" id="mpay" name="mobilepay" value="mobilepay">
+
+  <label  for="bservice"> Betalingsservice</label>
+  <input  type="checkbox" id="bservice" name="betaling" value="betaling">
+
+</div>
+
+<hr>
+
+<div class="privat">
+ 
+  <p class="formular_p" >Læs vores betingelser og privatlivspolitik her </p>
+ 
+  <input type="checkbox" id="privat" name="privat" value="privat">
+</div>
+  </div>
+
+  <div class="button">
+<Button variant="Primary" size="Large">BLIV MEDLEM</Button>
+</div>
+
+</form>
+
+
+<style>
+
+   /* Formularen */
+
+form { 
+padding-bottom: 2rem;
+  background-color: var(--font-white); 
+}
+
+  .container1{
+     display: flex;
+  flex-direction: column;
+  }
+
+  span{
+    margin-bottom: 10px;
+  }
+
+/* Betaling */
+
+
+/* input bokse for betaling og privatpolitik */
+
+input {
+   width: 24rem;
+    padding: 1rem;
+    margin: 1rem;
+    margin-top: -0.01rem;
+}
+
+label{
+    padding-left: 1rem;
+
+}
+
+
+
+/* Checkboks*/
+
+input[type=checkbox] {
+  width: 100%;
+
+
+  box-sizing: border-box;
+}
+
+
+
+/* Teksstyling*/
+
+
+/* Stylet som formular P */
+label {
+   color: var(--font-black); 
+   font-family: "Rubik";
+ text-align: left;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: var(--regular);
+  line-height: normal;
+}
+
+
+
+
+/* Styling af specifik tekst*/ 
+
+.her {
+color: var(--primary-red);
+
+}
+
+/* Knap */
+
+.button {
+   text-align: center;
+}
+
+
+/* Linjer */
+
+hr {
+   opacity: 50%;
+   width: 90%;
+   margin: auto;
+   
+}
+
+/* Styling af undertekst*/
+
+p {
+   color: var(--font-black);
+padding-top: 2rem;
+padding-bottom: 2rem;
+ padding-left: 1rem;
+ text-align: left;
+}
+
+h2 {
+    color: var(--primary-hover);
+     padding-left: 1rem;
+     padding-top: 2rem;
+
+}
+
+/* Website */
+
+   @media (min-width: 900px) {
+
+form {
+max-width: 35rem;
+}
+
+input {
+   width: 33rem;
+    padding: 1rem;
+    margin: 1rem;
+    margin-top: -0.01rem;
+}
+
+   }
+
+</style>

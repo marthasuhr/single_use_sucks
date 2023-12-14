@@ -1,5 +1,6 @@
 ---
 /* H1 display font + Alt i hero som ikke er fomularen */ 
+import Pil from "./Pil.astro";
 ---
 <div class="container">
 
@@ -9,14 +10,15 @@
 	<h1 class="h03">SUCKS</h1>
 	</div>
 
-
-<p>Hjælp os med at beskytte naturen, <br> dyrelivet og vores børn mod plastik!</p>
-
+<div class="tekst_pil" >
+<p>Hjælp os med at beskytte naturen, dyrelivet og vores børn mod plastik!</p>
+<Pil/>
+</div>
 </div>
     <style>
         
 .h0_container{
-    padding: 1rem 1rem 0 1rem;
+    padding: 2rem 1rem 1rem 1rem;
 }
 
 p{
@@ -26,31 +28,40 @@ p{
 
 }
 
+
+
 @media (min-width: 900px) {
 
     .container{
-padding: 3rem 5rem 3rem 0;
+padding-left: 4rem;
+padding-top: 3rem;
+}
+
+.tekst_pil{
+    display: grid;
+  grid-template-columns: 1fr 1fr;
+
 }
 
 .h01{
 font-family: Campton;
-font-size: 9.9375rem;
+font-size: 8.5rem;
 font-weight: var(--bold);
-height: 7.75rem;
+height: 6rem;
 
 }
 
 .h02{
 font-family: Campton;
-font-size: 19.07306rem;
+font-size: 16.2rem;
 font-style: normal;
 font-weight: var(--bold);
-height: 16rem;
+height: 13rem;
 }
 
 .h03{
 font-family: Campton;
-font-size: 10.63425rem;
+font-size: 9.2rem;
 font-weight: var(--bold);
    height: 10rem;
 }

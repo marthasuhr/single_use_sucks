@@ -52,26 +52,34 @@ import Button from "./Button.astro";
 
 <div class="privat">
  
-  <p class="formular_p" >Læs vores betingelser og privatlivspolitik her </p>
+  <p class="lille_p" >Læs vores betingelser og privatlivspolitik her </p>
  
   <input type="checkbox" id="privat" name="privat" value="privat">
 </div>
   </div>
 
+
   <div class="button">
-<Button variant="Primary" size="Large">BLIV MEDLEM</Button>
+<Button variant="Primary" size="Large"> <a href="../tak"> BLIV MEDLEM </a></Button>
 </div>
 
-</form>
+  </form>
+
 
 
 <style>
+
+
+a{
+  color: white;
+}
 
    /* Formularen */
 
 form { 
 padding-bottom: 2rem;
   background-color: var(--font-white); 
+
 }
 
   .container1{
@@ -90,7 +98,7 @@ padding-bottom: 2rem;
 
 input {
    width: 24rem;
-    padding: 1rem;
+    padding: 0.5rem;
     margin: 1rem;
     margin-top: -0.01rem;
 }
@@ -118,13 +126,16 @@ input[type=checkbox] {
 
 /* Stylet som formular P */
 label {
-   color: var(--font-black); 
-   font-family: "Rubik";
- text-align: left;
-  font-size: 1.0625rem;
-  font-style: normal;
+
+    color: var(--font-black);
+  font-family: "Rubik";
+  font-size: 0.9rem;
   font-weight: var(--regular);
-  line-height: normal;
+  
+
+ text-align: left;
+
+
 }
 
 
@@ -180,9 +191,14 @@ max-width: 35rem;
 
 input {
    width: 33rem;
-    padding: 1rem;
+    padding: 0.7rem;
     margin: 1rem;
     margin-top: -0.01rem;
+}
+
+
+label{
+   font-size: 1.0625rem;
 }
 
    }

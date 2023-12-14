@@ -1,5 +1,7 @@
- <ul><div 
-  class="navi">
+ <ul>
+
+  <div class="container">
+  <div class="navi">
   <li class="logo"><a href="."><img src="../images/logo.svg" alt="logo"></a></li>
   <li class="goderad" ><a href="../tips">5 GODE RÅD</a></li>
   </div>
@@ -9,7 +11,9 @@
   <li ><a href="#"><img src="../images/instagram.svg" alt="insta"></a></li>
   <li ><a href="#"><img src="../images/facebook.svg" alt="facebook"></a></li>
   </div>
+  </div>
 </ul> 
+
 <div class="divider"></div>
 
 
@@ -17,13 +21,12 @@
 
 
 .navi{
-
-
   display: flex;
   flex-direction: row;
   justify-content: left;
 list-style-type: none;
 align-items: center;
+gap: 2rem;
 
 }
 .icons{
@@ -33,12 +36,12 @@ align-items: center;
 border-bottom: 1px solid var(--font-white);
 }
 
- ul {
+ .container {
   background-color: none;
   display: flex;
-justify-content: left;
+
 list-style-type: none;
-align-items: center;
+
 padding: 1rem 0 1rem 1rem;
 
 
@@ -66,8 +69,6 @@ a:hover{
 
    img {
     display: flex;
-
-    width: 324px;
     height: 42px;
 
   }
@@ -81,24 +82,16 @@ a:hover{
   display: flex;
   flex-direction: row;
   justify-content: right;
+padding-left: 58rem;
+gap: 1.4rem;
 
 
 }
     img
      {
-      
-      width: 168px;
       height: 55px;
     }
-
   }
-
-
-    
 </style>
 
 
-<!-- <div class="icons">
-  <li ><a href="#"><img src="../images/instagram.svg" alt="insta"></a></li>
-  <li ><a href="#"><img src="../images/facebook.svg" alt="facebook"></a></li>
-  </div> -->

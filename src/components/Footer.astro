@@ -3,16 +3,16 @@
     <img src="../grafik/footerflasker.svg" alt="footer">
 
     <div class="container_footer">
-<div>
-      <h3>Kontakt os</h3>
+<div class="forste_kolonne" >
+      <h4>Kontakt os</h4>
       
         <p>Mail: info@plasticchange.org</p>
         <p>Tlf: +45 42 66 72 46</p>
         <p>Telefontid: <br> Mandag – Fredag: 10:00 – 15:00</p>
            </div>
-               <div>
+               <div class="anden_kolonne" >
         <img class="logo" src="../images/logo.svg" alt="logo">
-        <p>Følg os her</p>
+        <h4>Følg os her</h4>
         <div class="icons_parent_container">
         <img class="child1" src="../images/facebook.svg" alt="facebook">
         <img class="child2" src="../images/instagram.svg" alt="instagram">
@@ -28,18 +28,26 @@
 
 <style>
 
+  h4{
+    color: var(--font-white);
+  }
+
   .container_footer{
    display: flex;
     flex-direction:column ;
     justify-content: left;
     align-items: left;
-    line-height: 2.5;
+    line-height: 2.4;
   }
 
   .logo{
   width: 146px;
     height: 48px;
     margin-top: 3.5rem;
+}
+
+.logo:hover{
+    transform: scale(1.01);
 }
 
 .icons_parent_container{
@@ -49,43 +57,80 @@
 }
 
 .child1, .child2{
-width: 58px;
-height: 58px;
+width: 48px;
+height: 48px;
+}
+
+.child1:hover, .child2:hover{
+  transform: scale(1.2);
+
 }
 
 
 
 img{
+
       translate: 0 -65%;
 }
 
 
   footer {
-    padding: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
     background-color: var(--footer-brown);
   }
 
 
+  
 
+   .forste_kolonne{
+    margin-top: -2rem;
+   }
  
 
   @media (min-width: 900px) {
     footer {
+     
       padding: 3rem;
-      margin-right: 0%;
+
     }
 
-    .container_footer{
+    /* .container_footer{
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-    }
+
+
+    } */
+
+      .container_footer{
+   display: flex;
+    flex-direction: row ;
+    justify-content: center;
+
+
+    gap: 23rem;
+  }
 
 .logo
      {
       width: 336px;
       height: 110px;
     }
-   
+   .anden_kolonne{
+margin-top: -7rem;
+display: grid;
+
+   }
+
+   .forste_kolonne{
+    margin-top: -7rem;
+   }
+
+   .child1, .child2{
+width: 58px;
+height: 58px;
+}
+
  
   }
 </style>

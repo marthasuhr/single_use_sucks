@@ -6,11 +6,20 @@ import Gode3Card from "../components/Gode3Card.astro";
 ---
 
 <section>
-    <Gode2Card titel="1. FÅ BUGT MED DIT FLASKE FORBRUG" tekst="Faktisk estimeres det, at der dagligt bruges 1,3 milliarder plastflasker over hele verden, hvilket svarer til cirka 1 million per minut. Brug derfor en genanvendelig flaske!" imgPath="../godesvg/drikke.svg"/>
-        <Gode1Card titel="2. EN POSE TIL RESTEN AF LIVET" tekst="Hvis bare én person skifter til genanvendelige indkøbsposer i ét år, estimeres det, at 500 engangsplastikposer vil blive erstattet med blot en indkøbspose." imgPath="../godesvg/pose.svg"/>
+    <div class="card_container" >
+    <div class="scroll" >
+    <Gode2Card titel="1. FÅ BUGT MED DIT FLASKE FORBRUG" tekst="Faktisk estimeres det, at der dagligt bruges 1,3 milliarder plastflasker over hele verden, hvilket svarer til cirka 1 million per minut. Brug derfor en genanvendelig flaske!" imgPath="../godesvg/drikke.svg"/></div>
+    <div class="scroll">
+        <Gode1Card titel="2. EN POSE TIL RESTEN AF LIVET" tekst="Hvis bare én person skifter til genanvendelige indkøbsposer i ét år, estimeres det, at 500 engangsplastikposer vil blive erstattet med blot en indkøbspose." imgPath="../godesvg/pose.svg"/></div>
+        <div class="scroll">
             <Gode2Card titel="3. SKIFT TIL EN BAMBUS TANDBØRSTE" tekst="Bambus er en hurtigvoksende græsart, der bruger mindre vand end træer og kræver ikke kemiske gødninger eller pesticider. Dette betyder også, at den kan komposteres ved livets ende." imgPath="../godesvg/tandbørste.svg"/>
-                <Gode1Card titel="4. KØB PLASTFRIT FRUGT OG GRØNT" tekst="Ved at vælge plastfri indpakning støtter du en mere bæredygtig og ansvarlig tilgang til forbrug, hvilket bidrager til at bevare vores planet og skabe en renere, grønnere fremtid for os alle." imgPath="../godesvg/vege.svg"/>
+            </div>
+            <div class="scroll">
+                <Gode1Card titel="4. KØB PLASTFRIT FRUGT OG GRØNT" tekst="Ved at vælge plastfri indpakning støtter du en mere bæredygtig og ansvarlig tilgang til forbrug, hvilket bidrager til at bevare vores planet og skabe en renere, grønnere fremtid for os alle." imgPath="../godesvg/vege.svg"/> </div>
+                <div class="scroll">
            <Gode3Card titel="5. STØT PLASTIC CHANGE I VORES MISSION!" tekst="Som medlem vil du bidrage direkte til bæredygtige løsninger og initiativer, der bekæmper plastproblemet globalt. Dine bidrag styrker forskning, uddannelse og lobbyarbejde, hvilket er afgørende for at skabe opmærksomhed og implementere effektive politikker. Sammen kan vi gøre en markant forskel og skabe en mere bæredygtig fremtid uden overflødigt plastik. Bliv medlem i dag og vær med til at forme en verden med mindre plastforurening." />
+           </div>
+           </div>
 </section>
 <style>
      @media (min-width: 900px) {
@@ -18,3 +27,82 @@ import Gode3Card from "../components/Gode3Card.astro";
         padding: 1rem 8rem 1rem 8rem;
     }}
 </style>
+
+
+
+<script>
+
+import { gsap } from "gsap";
+    
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+
+gsap.registerPlugin(ScrollTrigger);
+
+  gsap.from(".scroll:nth-child(1)", {
+    xPercent: 100,
+    duration: 1,
+    stagger: 0.5,
+    scrollTrigger: {
+      trigger: ".scroll:nth-child(1)",
+      end: "bottom 80%",
+      scrub: true,
+      
+    },
+  });
+
+    gsap.from(".scroll:nth-child(2)", {
+    xPercent: -100,
+    duration: 1,
+    stagger: 0.5,
+    scrollTrigger: {
+      trigger: ".scroll:nth-child(2)",
+      end: "bottom 80%",
+      scrub: true,
+      
+    },
+  });
+
+
+
+   gsap.from(".scroll:nth-child(3)", {
+    xPercent: 100,
+    duration: 1,
+    stagger: 0.5,
+    scrollTrigger: {
+      trigger: ".scroll:nth-child(3)",
+      end: "bottom 80%",
+      scrub: true,
+      
+    },
+  });
+ gsap.from(".scroll:nth-child(4)", {
+    xPercent: -100,
+    duration: 1,
+    stagger: 0.5,
+    scrollTrigger: {
+      trigger: ".scroll:nth-child(4)",
+      end: "bottom 80%",
+      scrub: true,
+      
+    },
+  });
+
+ gsap.from(".scroll:nth-child(5)", {
+    xPercent: -100,
+    duration: 0.1,
+    stagger: 0.5,
+    scrollTrigger: {
+      trigger: ".scroll:nth-child(5)",
+      end: "bottom 100%",
+      scrub: true,
+      
+    },
+  });
+
+ 
+      
+    
+
+ 
+</script>

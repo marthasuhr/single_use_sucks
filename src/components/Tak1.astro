@@ -4,47 +4,72 @@ import Button from "../components/Button.astro";
 ---
 
 <section>
-    <div class="background-image">
+ 
 
  <div class="flex"> 
-    <img class="svg" src="../grafik/tak_ikon.svg" alt="">
+  <div class="grafik" >
+    <img  src="../grafik/tak_ikon.svg" alt=""></div>
 <div class="cta">
    
 <div class="h3_light">Læs mere om Plastic Change her! </div>
-<Button variant="Primary" size="Large">Læs mere!</Button>
+<Button variant="Primary" size="Large"> <a href="./tips"> Læs mere!</a></Button>
 
-</div>
+
 </div>
 </div>      
 </section>
 
 <style>
+  
+  a{
+    text-decoration: none;
+    color: var(--font-white);
+  }
 
-.background-image {
+section {
       background-image: url(../images/bølge_tak.svg);
       background-size: cover;
       width: 100%;
       height: 80vh;
+       background-repeat: no-repeat;
+     background-position: bottom;
+     overflow: hidden;
     }
 
-   .flex{
-    padding-inline: 2rem;
-    } 
 
 .cta{
     color: var(--primary-hover);
   text-align: center;
 }
 .h3_light{
-    padding-block: 2rem;
+padding: 0 0 3rem 0;
 }
 
-.svg {
+img {
   width: 22rem;
   display: flex;
   margin: auto;
+  padding-bottom: 3rem;
+
 }
 
+ @keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-20px);
+    }
+  }
+ 
+.grafik{
+
+ animation:
+      bounce 300ms
+      alternate infinite
+      cubic-bezier(.2, .65, .6, 1);
+
+}
 
 
 @media (min-width: 1200px) {
@@ -69,11 +94,15 @@ padding-top: 4rem;
   padding-right: 1rem;
    
     }
-}
 
-.svg{
+
+img{
 margin-left: 5rem;
 }
+}
+
+
+
 
 
 

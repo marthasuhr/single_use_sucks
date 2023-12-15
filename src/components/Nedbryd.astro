@@ -33,13 +33,16 @@ import Button from "./Button.astro";
 </div>
 </div>
 <div class="button">
-<Button variant="Primary" size="Large">BLIV MEDLEM</Button>
+<Button variant="Primary" size="Large"> <a href=".">BLIV MEDLEM</a> </Button>
 
 </div>
 
 <style>
 
-
+a{
+  text-decoration: none;
+  color: var(--font-white);
+}
 .button {
   display: flex;
   justify-content: center;

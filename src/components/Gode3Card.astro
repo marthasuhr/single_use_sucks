@@ -8,11 +8,15 @@ import Button from "./Button.astro";
 
     <p>{tekst}</p>
 <div>
-<Button variant="Primary" size="Large">BLIV MEDLEM</Button>
+<Button variant="Primary" size="Large"> <a href="../"> BLIV MEDLEM</a> </Button>
 </section>
 
 <style>
 
+a{
+    text-decoration: none;
+    color: var(--font-white);
+}
     section{
         display: flex;
         flex-direction: column;

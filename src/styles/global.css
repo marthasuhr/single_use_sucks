@@ -8,7 +8,8 @@
   --primary-red: #e93858;
 
   --font-white: #ffffff;
-  --font-black: #000000;
+  /* Den er senere ændret til font-dark, men har beholdt navn */
+  --font-black: #013a39;
 
   --footer-brown: #c3a18b;
 

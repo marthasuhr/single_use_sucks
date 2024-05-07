@@ -1,0 +1,97 @@
+ <ul>
+
+  <div class="container">
+  <div class="navi">
+  <li class="logo"><a href="."><img src="../images/logo.svg" alt="logo"></a></li>
+  <li class="goderad" ><a href="../tips">5 GODE RÅD</a></li>
+  </div>
+
+
+<div class="icons">
+  <li ><a href="#"><img src="../images/instagram.svg" alt="insta"></a></li>
+  <li ><a href="#"><img src="../images/facebook.svg" alt="facebook"></a></li>
+  </div>
+  </div>
+</ul> 
+
+<div class="divider"></div>
+
+
+<style>
+
+
+.navi{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+list-style-type: none;
+align-items: center;
+gap: 2rem;
+
+}
+.icons{
+  display: none;
+}
+.divider{
+border-bottom: 1px solid var(--font-white);
+}
+
+ .container {
+  background-color: var(--secondary-background);
+  display: flex;
+
+list-style-type: none;
+
+padding: 1rem 0 1rem 1rem;
+
+
+}
+
+a{
+    color: var(--font-white);
+    text-decoration: none;
+}
+
+a:hover{
+  transform: scale(1.2);
+  color: var(--primary-red);
+}
+
+.goderad {
+
+  text-align: center;
+
+  text-decoration: none;
+    align-items: center;
+
+}
+
+
+   img {
+    display: flex;
+    height: 42px;
+
+  }
+
+
+  
+  @media (min-width: 900px) {
+
+.icons{
+  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+padding-left: 58rem;
+gap: 1.4rem;
+
+
+}
+    img
+     {
+      height: 55px;
+    }
+  }
+</style>
+
+

@@ -15,22 +15,22 @@ import Button from "./Button.astro";
 
  <p class="formular_p_bold" >Oplysninger</p>
 
-<div class="container1">
+<div class="container_1">
 <span>
  <label for="fname">Fornavn</label> <br>
-  <input type="text" id="fnavn" name="fname" >
+  <input type="text" id="navn" name="fname" >
 </span>
 <span>
   <label for="ename">Efternavn</label> <br>
-  <input type="text" id="enavn" name="lname" >
+  <input type="text" id="navn" name="lname" >
 </span>
 <span>
    <label for="email">E-mail</label> <br>
-  <input type="text" id="email" name="lname" >
+  <input type="text" id="navn" name="lname" >
   </span>
   <span>
    <label for="mobil">Mobilnummer</label> <br>
-  <input type="text" id="mobil" name="lname" >
+  <input type="text" id="navn" name="lname" >
 </span>
 </div>
 
@@ -38,29 +38,35 @@ import Button from "./Button.astro";
 
  <p class="formular_p_bold" >Betalingsoplysninger</p>
 
-<div class="betaling">
 
-  <label  for="mpay"> Mobilepay</label>
-  <input  type="checkbox" id="mpay" name="mobilepay" value="mobilepay">
+ <div class="container_2" >
 
-  <label  for="bservice"> Betalingsservice</label>
-  <input  type="checkbox" id="bservice" name="betaling" value="betaling">
+<div class="betalinger" >
+
+<input type="radio" checked="checked" name="radio" id="radio1" />
+<label for="radio1">  Mobilepay</label>
+</div>
+
+<input type="radio" name="radio" id="radio1" />
+<label for="radio1">  Betalingsservice</label>
 
 </div>
 
 <hr>
 
-<div class="privat">
- 
-  <p class="lille_p" >Læs vores betingelser og privatlivspolitik her </p>
- 
-  <input type="checkbox" id="privat" name="privat" value="privat">
+<div class="container_3">
+
+  <input type="checkbox" id="privat" name="privat" />
+<label for="privat"> Læs vores betingelser og privatlivspolitik her</label>
+
+  
+
 </div>
   </div>
 
 
   <div class="button">
-<Button variant="Primary" size="Large"> <a href="../tak"> BLIV MEDLEM </a></Button>
+<Button variant="Secondary" size="Large"> <a href="../tak"> BLIV MEDLEM </a></Button>
 </div>
 
   </form>
@@ -68,6 +74,21 @@ import Button from "./Button.astro";
 
 
 <style>
+
+.container_3{
+  padding-left: 1rem;
+  padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.container_2{
+  padding-left: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.betalinger{
+padding-bottom: 1rem;
+}
 
 
 a{
@@ -82,7 +103,7 @@ padding-bottom: 2rem;
 
 }
 
-  .container1{
+  .container_1{
      display: flex;
   flex-direction: column;
   }
@@ -96,57 +117,27 @@ padding-bottom: 2rem;
 
 /* input bokse for betaling og privatpolitik */
 
-input {
+#navn {
    width: 24rem;
     padding: 0.5rem;
     margin: 1rem;
     margin-top: -0.01rem;
-}
 
-label{
-    padding-left: 1rem;
-
-}
-
-
-
-/* Checkboks*/
-
-input[type=checkbox] {
-  width: 100%;
-
-
-  box-sizing: border-box;
-}
-
-
+} 
 
 /* Teksstyling*/
 
 
 /* Stylet som formular P */
 label {
-
-    color: var(--font-black);
+    padding-left: 1rem;
+    color: var(--tertiary-background);
   font-family: "Rubik";
   font-size: 0.9rem;
   font-weight: var(--regular);
-  
-
- text-align: left;
+ text-align: left;}
 
 
-}
-
-
-
-
-/* Styling af specifik tekst*/ 
-
-.her {
-color: var(--primary-red);
-
-}
 
 /* Knap */
 
@@ -167,7 +158,7 @@ hr {
 /* Styling af undertekst*/
 
 p {
-   color: var(--font-black);
+   color: var(--tertiary-background);
 padding-top: 2rem;
 padding-bottom: 2rem;
  padding-left: 1rem;
@@ -189,7 +180,7 @@ form {
 max-width: 35rem;
 }
 
-input {
+#navn {
    width: 33rem;
     padding: 0.7rem;
     margin: 1rem;

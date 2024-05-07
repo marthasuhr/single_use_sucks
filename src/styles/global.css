@@ -8,7 +8,8 @@
   --primary-red: #e93858;
 
   --font-white: #ffffff;
-  --font-black: #000000;
+  /* Den er senere ændret til font-dark, men har beholdt navn */
+  --font-black: #013a39;
 
   --footer-brown: #c3a18b;
 
@@ -95,7 +96,7 @@ a {
 
 /* Formular H2 */
 .formular_h2 {
-  font-family: Rubik;
+  font-family: Campton;
   font-size: 1.8rem;
 
   font-weight: var(--verybold);
@@ -104,7 +105,7 @@ a {
 /* Formular p */
 .formular_p {
   color: var(--font-black);
-  font-family: Rubik;
+  font-family: "Rubik", sans-serif;
   font-size: 0.9rem;
   font-weight: var(--regular);
 }
@@ -112,14 +113,14 @@ a {
 /* Formular p Bold */
 .formular_p_bold {
   color: var(--font-black);
-  font-family: Rubik;
+  font-family: "Rubik", sans-serif;
   font-size: 1.2rem;
   font-weight: var(--verybold);
 }
 
 .lille_p {
   color: var(--font-black);
-  font-family: Rubik;
+  font-family: "Rubik", sans-serif;
   font-size: 0.8rem;
 
   font-weight: var(--regular);
@@ -153,7 +154,7 @@ a {
   }
 
   p {
-    font-size: 1.875rem;
+    font-size: 1.6rem;
   }
 
   a {
